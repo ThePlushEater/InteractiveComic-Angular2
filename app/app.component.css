@@ -1,0 +1,9 @@
+@media all {
+    hr {
+        border: 1px inset rgba(255, 255, 255, 1);
+        margin: 2px 0;
+    }
+    .selected {
+
+    }
+}

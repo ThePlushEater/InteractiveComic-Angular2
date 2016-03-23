@@ -1,0 +1,5 @@
+<div *ngIf="selectedPanel" class="">
+    <div class="text-publisher">{{selectedPanel.text}}</div>
+</div>
+
+<canvas id="comic-stage" [ngStyle]="{'width': canvasWidth, 'height': canvasHeight}"></canvas>

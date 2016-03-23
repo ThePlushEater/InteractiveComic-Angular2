@@ -1,0 +1,14 @@
+<div *ngIf="comic" class="wrapper-comic-detail">
+    <div class="container-thumbnail">
+        <img src="assets/images/{{comic.thumbnail}}" />
+    </div>
+    <div class="container-name">
+        <div class="text-publisher">{{comic.publisher}}'s</div>
+        <div class="text-name">{{comic.name}}</div>
+        <div class="text-issue">Issue #{{comic.issue}}</div>
+    </div>
+    <div class="container-description">
+        <div class="text-description">{{comic.description}}</div>
+        <div class="btn-play" (click)="gotoPlay(comic)">{{btnPlay|uppercase}}</div>
+    </div>
+</div>

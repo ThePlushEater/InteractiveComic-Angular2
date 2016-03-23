@@ -1,7 +1,10 @@
-<h2>{{title}}</h2>
+<div class="text-app-title">{{title|uppercase}}</div>
 <hr/>
 <nav>
-    <a [routerLink]="['Dashboard']">Dashboard</a>
+    <a [routerLink]="['Dashboard']">Home</a>
 </nav>
-<router-outlet></router-outlet>
 <hr/>
+<router-outlet></router-outlet>
+<div class="text-copyright">
+    © 2015 CaptainWhale.
+</div>

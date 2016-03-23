@@ -1,9 +1,17 @@
 @media all {
+    .text-app-title {
+        font-size: xx-large;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 3vw;
+    }
     hr {
         border: 1px inset rgba(255, 255, 255, 1);
         margin: 2px 0;
     }
-    .selected {
-
+    .text-copyright {
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: small;
     }
 }

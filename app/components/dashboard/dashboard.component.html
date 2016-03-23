@@ -1,8 +1,15 @@
-<h3>{{title}}</h3>
-<div class="grid grid-pad">
-  <div *ngFor="#comic of comics" (click)="gotoDetail(comic)" class="col-1-4">
-    <div class="module comic">
-      <h4>{{comic.name}}</h4>
+<div class="wrapper-comic-detail" *ngIf="selectedComic">
+    <ic-comic-detail [comic]="selectedComic"></ic-comic-detail>
+</div>
+<div class="text-app-title">{{title}}</div>
+<div class="wrapper-comic-list">
+    <div class="container-pager">
+        <i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i>
     </div>
-  </div>
+    <div class="container-comics">
+        <div *ngFor="#comic of comics" (click)="openDetail(comic)" [class.selected]="comic === selectedComic" class="container-comic">
+            <img src="assets/images/{{comic.thumbnail}}" />
+            <div class="text-overlay">{{comic.name}}</div>
+        </div>
+    </div>
 </div>
